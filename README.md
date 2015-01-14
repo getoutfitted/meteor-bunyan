@@ -4,7 +4,7 @@ Implements the [Bunyan](https://github.com/trentm/node-bunyan) logging module fo
 
 Also adds [bunyan-pretty](https://www.npmjs.com/package/bunyan-pretty) for pretty-printed bunyan Meteor console output.
 
-The package exports `logger.bunyan`, `logger.bunyanLogstash` and `logger.bunyanPretty`.
+The package exports `logger.bunyan`, `logger.bunyan` and `logger.bunyanPretty`.
 
 ```
 logger = {};
