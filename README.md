@@ -2,7 +2,7 @@ Implements the [Bunyan](https://github.com/trentm/node-bunyan) logging module fo
 
     `meteor add ongoworks:bunyan`
 
-Also adds [bunyan-pretty](https://www.npmjs.com/package/bunyan-pretty) for pretty-printed bunyon Meteor console output.
+Also adds [bunyan-pretty](https://www.npmjs.com/package/bunyan-pretty) for pretty-printed bunyan Meteor console output.
 
 The package exports `logger.bunyan`, `logger.bunyanLogstash` and `logger.bunyanPretty`.
 
@@ -21,7 +21,7 @@ Example bunyan-pretty implemention in your application as:
 ```
 log = logger.bunyan.createLogger({
   name: 'your-app',
-  stream: process.stdout.isTTY || Meteor.settings.isDebug ? logger.bunyanPretty() : process.stdout,
+  stream: process.stdout.isTTY ? logger.bunyanPretty() : process.stdout,
   level: 'info'
 })
 ```
