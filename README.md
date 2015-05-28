@@ -1,8 +1,10 @@
-Implements the [Bunyan](https://github.com/trentm/node-bunyan) logging module for Meteor
+Add and export the [Bunyan](https://github.com/trentm/node-bunyan) logging module, also add the browserify client and bunyan-pretty.
 
     `meteor add ongoworks:bunyan`
 
-Also adds [bunyan-pretty](https://www.npmjs.com/package/bunyan-pretty) for pretty-printed bunyan Meteor console output.
+Adds [bunyan-pretty](https://www.npmjs.com/package/bunyan-pretty) for pretty-printed bunyan Meteor output.
+
+## Server
 
 The package exports `logger.bunyan` and `logger.bunyanPretty`.
 
@@ -29,3 +31,10 @@ log = logger.bunyan.createLogger({
 And add logging:
 
 `log.info("Something informative");`
+
+## Client
+The package exports `bunyan` to the `client`.
+
+    var log = bunyan.createLogger({name: 'play', level: 'debug'});
+    log.trace('this one does not emit');
+    log.debug('hi on debug');   // console.log
