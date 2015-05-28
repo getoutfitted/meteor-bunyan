@@ -1,6 +1,6 @@
 Add and export the [Bunyan](https://github.com/trentm/node-bunyan) logging module, also add the browserify client and bunyan-pretty.
 
-    `meteor add ongoworks:bunyan`
+    `meteor add ongoworks:bunyan-logger`
 
 Adds [bunyan-pretty](https://www.npmjs.com/package/bunyan-pretty) for pretty-printed bunyan Meteor output.
 
