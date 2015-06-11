@@ -1,11 +1,11 @@
 Package.describe({
   summary: "Bunyan",
   name: "ongoworks:bunyan-logger",
-  version: "1.3.5",
+  version: "1.4.0",
   git: "https://github.com/ongoworks/meteor-bunyan.git"
 });
 
-Npm.depends({'bunyan': '1.3.5','bunyan-pretty': '0.0.1'});
+Npm.depends({'bunyan': '1.4.0','bunyan-pretty': '0.0.1'});
 
 Package.onUse(function (api) {
   api.versionsFrom('METEOR@1.0');
@@ -16,4 +16,5 @@ Package.onUse(function (api) {
 
   api.export(["logger"]);
   api.export('bunyan', 'client');
+  api.export('RotatingFileStream','client'); //see: https://github.com/trentm/node-bunyan/issues/223
 });
