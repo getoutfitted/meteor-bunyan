@@ -5,7 +5,7 @@ Package.describe({
   git: "https://github.com/ongoworks/meteor-bunyan.git"
 });
 
-Npm.depends({'bunyan': '1.4.0','bunyan-pretty': '0.0.1'});
+Npm.depends({'bunyan': '1.4.0','bunyan-prettystream': '0.1.3'});
 
 Package.onUse(function (api) {
   api.versionsFrom('METEOR@1.0');
