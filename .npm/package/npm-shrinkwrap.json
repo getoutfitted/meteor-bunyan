@@ -42,6 +42,9 @@
           "version": "2.3.6"
         }
       }
+    },
+    "bunyan-prettystream": {
+      "version": "0.1.3"
     }
   }
 }

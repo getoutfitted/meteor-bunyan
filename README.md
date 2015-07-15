@@ -6,11 +6,14 @@ Adds [bunyan-pretty](https://www.npmjs.com/package/bunyan-pretty) for pretty-pri
 
 ## Server
 
-The package exports `logger.bunyan` and `logger.bunyanPretty`.
+The package exports `logger.bunyan`, `logger.bunyanPrettyStream` and `logger.bunyanPretty`.  
+
+_NOTE: `logger.bunyanPretty` can cause issues when running on Windows_
 
 ```
 logger = {};
 logger.bunyan = Npm.require('bunyan');
+logger.bunyanPrettyStream = Npm.require('bunyan-prettystream')
 logger.bunyanPretty = Npm.require('bunyan-pretty');
 ```
 
